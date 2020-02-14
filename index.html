@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <script src="https://s2.cdn.tv.br/plugins/cdntv-player/cdntv-player.js"></script>
+  </head>
+  <body>
+    <div id="player"></div>
+
+    <script>
+      // ajuste dinÃ¢mico do tamanho da caixa
+     var largura = '100%';
+     var altura = '100%';
+
+     var myPlayer = new CdntvPlayer({
+       "domain": "gigalink.tv.br", //required
+       "user": "portal", //required
+       "password": "portal", //required
+       "playerElement": "player", //required
+       "protocol": "https", //optional
+       "height": altura, //optional
+       "width": largura, //optional
+       "mute": false, //optional
+       "channelGid": "BZi0ndeWy2GYnG" //optional
+     });
+     myPlayer.init();
+   </script>
+  </body>
+</html>
